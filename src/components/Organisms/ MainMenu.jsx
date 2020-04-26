@@ -3,26 +3,69 @@ import React from "react"
 import { NavLink } from "react-router-dom"
 
 const MainMenu = () => (
-    <header className="main-header">
-      <div className="ed-grid s-grid-5 lg-grid-4">
-        <div className="s-cols-4 lg-cols-1 s-cross-center">
-            <a href="/">
-                <img className="main-logo" src="https://ed.team/static/images/logo.svg" alt="Logo EDteam"/>
-            </a>
-        </div>
-        <div className="s-grid-1 lg-cols-3 s-cross-center s-main-end header-links">
-          <nav className="main-menu" id="main-menu">
-            <ul>
-                <li><NavLink exact to="/" activeClassName="activo"> Inicio </NavLink></li>
-                <li><NavLink to="/cursos" activeClassName="activo"> Cursos </NavLink></li>
-                <li><NavLink to="/formulario" activeClassName="activo"> Formulario </NavLink></li>
-                <li><NavLink to="/usuarios" activeClassName="activo"> Usuarios </NavLink></li>
-            </ul>
-          </nav>
-          <div className="main-menu-toggle to-l" id="main-menu-toggle"></div>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="https://firebasestorage.googleapis.com/v0/b/homlur.appspot.com/o/Identidad%20corporativa%2FLogos%2FHomlur_Logo_White_RGB.svg?alt=media&token=fd39abf3-fa25-4015-8880-5059e121258d" width="112" height="28"/>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Alquilar
+      </a>
+
+      <a class="navbar-item">
+        Publicar
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Más
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider" />
+          <a class="navbar-item">
+            Equipo
+          </a>
         </div>
       </div>
-    </header>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 )
 
 export default MainMenu
+
+
