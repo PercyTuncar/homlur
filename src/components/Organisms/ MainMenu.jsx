@@ -33,13 +33,13 @@ const MainMenu = () => (
 
         <div class="navbar-dropdown">
           <a class="navbar-item">
-            About
+            Quienes somos
           </a>
           <a class="navbar-item">
-            Jobs
+            Cómo funciona Homlur
           </a>
           <a class="navbar-item">
-            Contact
+            Contacto
           </a>
           <hr class="navbar-divider" />
           <a class="navbar-item">
@@ -53,10 +53,10 @@ const MainMenu = () => (
       <div class="navbar-item">
         <div class="buttons">
           <a class="button is-primary">
-            <strong>Sign up</strong>
+            <strong>Registrate</strong>
           </a>
           <a class="button is-light">
-            Log in
+            Inicia sesión
           </a>
         </div>
       </div>
